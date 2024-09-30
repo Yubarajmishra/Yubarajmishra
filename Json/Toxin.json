@@ -1,0 +1,192 @@
+{
+  "connections": [
+    {
+      "type": "html",
+      "file": "index.html",
+      "description": "Main HTML file",
+      "accessLevel": "public",
+      "encryption": "none",
+      "authentication": {
+        "required": false,
+        "method": "none"
+      },
+      "authorization": {
+        "required": false,
+        "method": "none"
+      }
+    },
+    {
+      "type": "cs",
+      "file": "Program.cs",
+      "description": "C# program file",
+      "accessLevel": "private",
+      "encryption": "AES-256",
+      "authentication": {
+        "required": true,
+        "method": "password"
+      },
+      "authorization": {
+        "required": true,
+        "method": "role-based"
+      }
+    },
+    {
+      "type": "java",
+      "file": "Main.java",
+      "description": "Java main file",
+      "accessLevel": "private",
+      "encryption": "RSA-2048",
+      "authentication": {
+        "required": true,
+        "method": "biometric"
+      },
+      "authorization": {
+        "required": true,
+        "method": "attribute-based"
+      }
+    },
+    {
+      "type": "javascript",
+      "file": "script.js",
+      "description": "JavaScript script file",
+      "accessLevel": "public",
+      "encryption": "none",
+      "authentication": {
+        "required": false,
+        "method": "none"
+      },
+      "authorization": {
+        "required": false,
+        "method": "none"
+      }
+    },
+    {
+      "type": "python",
+      "file": "main.py",
+      "description": "Python main file",
+      "accessLevel": "private",
+      "encryption": "AES-256",
+      "authentication": {
+        "required": true,
+        "method": "password"
+      },
+      "authorization": {
+        "required": true,
+        "method": "role-based"
+      }
+    },
+    {
+      "type": "database",
+      "file": "data.db",
+      "description": "Database file",
+      "accessLevel": "private",
+      "encryption": "RSA-2048",
+      "authentication": {
+        "required": true,
+        "method": "biometric"
+      },
+      "authorization": {
+        "required": true,
+        "method": "attribute-based"
+      }
+    },
+    {
+      "type": "css",
+      "file": "styles.css",
+      "description": "CSS stylesheet file",
+      "accessLevel": "public",
+      "encryption": "none",
+      "authentication": {
+        "required": false,
+        "method": "none"
+      },
+      "authorization": {
+        "required": false,
+        "method": "none"
+      }
+    },
+    {
+      "type": "image",
+      "file": "image.jpg",
+      "description": "Image file",
+      "accessLevel": "public",
+      "encryption": "none",
+      "authentication": {
+        "required": false,
+        "method": "none"
+      },
+      "authorization": {
+        "required": false,
+        "method": "none"
+      }
+    }
+  ],
+  "html": {
+    "title": "Main HTML File",
+    "body": "This is the main HTML file.",
+    "links": [
+      {
+        "href": "https://www.example.com",
+        "text": "Example website"
+      }
+    ],
+    "accessControl": {
+      "allow": ["public"],
+      "deny": ["private"]
+    },
+    "security": {
+      "csrfProtection": true,
+      "xssProtection": true
+    }
+  },
+  "cs": {
+    "namespace": "MyNamespace",
+    "class": "MyClass",
+    "methods": [
+      {
+        "name": "MyMethod",
+        "returnType": "void",
+        "parameters": [
+          {
+            "name": "param1",
+            "type": "int"
+          }
+        ]
+      }
+    ],
+    "accessControl": {
+      "allow": ["private"],
+      "deny": ["public"]
+    },
+    "security": {
+      "inputValidation": true,
+      "errorHandling": true
+    }
+  },
+    "java": {
+      "package": "my.package",
+      "class": "MyClass",
+      "methods": [
+        {
+          "name": "myMethod",
+          "returnType": "void",
+          "parameters": [
+            {
+              "name": "param1",
+              "type": "int"
+            }
+          ]
+        }
+      ],
+      "accessControl": {
+        "allow": ["private"],
+        "deny": ["public"]
+      },
+      "security": {
+        "inputValidation": true,
+        "errorHandling": true,
+        "dataEncryption": true,
+        "secureCodingPractices": true
+      }
+    }
+  }

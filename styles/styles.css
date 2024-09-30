@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: rgb(219, 142, 142);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .container {
+    flex: 1;
+  }
+
+  footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+
+  footer ul {
+    list-style-type: none;  /* Removes list bullets */
+    padding: 0;
+  }
+
+  footer ul li {
+    display: inline;
+    margin-right: 15px;  /* Adds space between the links */
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: #007BFF;
+  }
+
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
